@@ -22,7 +22,7 @@ class MqttViewModel: ViewModel() {
 
     private val defaultServerUri = "ssl://io.adafruit.com:8883"
 
-    private val subscriptionTopics = arrayOf("Jonathan_Allen1993/feeds/lyrics", "Jonathan_Allen1993/feeds/songstart-slash-songoff/json")
+    private val subscriptionTopics = arrayOf("Jonathan_Allen1993/feeds/lyrics", "Jonathan_Allen1993/feeds/songstart-slash-songoff")
     private val subscriptionQos = intArrayOf(0, 0)
 
     // Publish topic
@@ -35,7 +35,7 @@ class MqttViewModel: ViewModel() {
     init {
         var serverUri = defaultServerUri
         val username = "Jonathan_Allen1993"
-        val password = "aio_gUUQ96oGxMVe6C0ZTxWVg5SsbAXX"
+        val password = "aio_DYRW78KdBF0LEzB3HNInz3Y7DZKl"
 
         // Create MQTT Manager
         mqttManager = MQTTManager(
